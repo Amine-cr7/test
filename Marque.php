@@ -9,6 +9,6 @@ class Marque extends Model
 {
     use HasFactory;
     public function voiture(){
-        return $this->hasOne(Voiture::class);
+        return $this->hasMany(Voiture::class);
     }
 }
